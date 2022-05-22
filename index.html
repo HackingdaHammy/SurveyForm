@@ -33,30 +33,98 @@
                 <p>Which option best describes your current role?</p>
                 <select class="formControl" id="dropdown" name="role" required="">
 <!--make 6 option values with the first one being disabled-->
-                    <option></option>
-                    <option></option>
-                    <option></option>
-                    <option></option>
-                    <option></option>
-                    <option></option>
+                    <option disabled="" selected="" value="">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer Not To Say</option>
+                    <option value="other">Other</option>
                 </select> 
             </div>
             <div class="formGroup">
-                <label></label>
-
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+<!--create a radio button with 3 choices-->
+                    <label>
+                        <input type="radio" value="Definitely" checked="" class="inputRadio" name="userRecommended">
+                        Definitely
+                    </label>
+                    <label>
+                        <input type="radio" value="Maybe" class="inputRadio" name="userRecommended">
+                        Maybe
+                    </label>
+                    <label>
+                        <input type="radio" value="NotSure" class="inputRadio" name="userRecommended">
+                        Not Sure
+                    </label>
             </div>
             <div class="formGroup">
-                <label></label>
-
+<!--create 5 options to choose from with the first being disabled-->
+                <p>What is your favorite feature of freeCodeCamp?</p>     
+                <select class="formControl" id="dropdown" name="role" required="">
+                    <option disabled="" selected="" value="">Select an Option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open Source</option>
+                </select>           
             </div>
             <div class="formGroup">
-                <label></label>
-
+                <p>What would you like to see improved?</p>
+<!--add a clue function-->
+<!--make 11 checkboxes to choose from-->
+                <label>
+                    <input class="inputCheckbox" type="checkbox" name="prefer" value="FEP">
+                    Front-End Projects
+                </label>
+                <label>
+                    <input class="inputCheckbox" type="checkbox" name="prefer" value="BEP">
+                    Back-End Project
+                </label>
+                <label>
+                    <input class="inputCheckbox" type="checkbox" name="prefer" value="DV">
+                    Data Visualization
+                </label>
+                <label>
+                    <input class="inputCheckbox" type="checkbox" name="prefer" value="CHS">
+                    Challenges
+                </label>
+                <label>
+                    <input class="inputCheckbox" type="checkbox" name="prefer" value="OPS">
+                    Open Source Community
+                </label>
+                <label>
+                    <input class="inputCheckbox" type="checkbox" name="prefer" value="GHR">
+                    Gitter Help Rooms
+                </label>
+                <label>
+                    <input class="inputCheckbox" type="checkbox" name="prefer" value="VIDS">
+                    Videos
+                </label>
+                <label>
+                    <input class="inputCheckbox" type="checkbox" name="prefer" value="CM">
+                    City Meetups
+                </label>
+                <label>
+                    <input class="inputCheckbox" type="checkbox" name="prefer" value="WIKI">
+                    Wiki
+                </label>
+                <label>
+                    <input class="inputCheckbox" type="checkbox" name="prefer" value="FOR">
+                    Forums
+                </label>
+                <label>
+                    <input class="inputCheckbox" type="checkbox" name="prefer" value="AC">
+                    Additional Courses
+                </label>
             </div>
             <div class="formGroup">
-                <label></label>
-
+<!--add a textbox area-->
+                <p>Any comments or suggestions?</p>
+                <textarea id="textArea" rows="5" cols="60" name="areaText" placeholder="Enter your comments here..."></textarea>
             </div>
+<!--button will have an animation effect-->
+<!--present animation effect after stylizing other sections-->
+            <button id="submit">Submit</button>
         </form>
     </div>
 </body>
