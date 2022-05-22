@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description"><i>Thank you for taking the time to help us improve the platform </i></p>
+    </div>
+
+    <div class="contentForm">
+        <form id="survey-form">
+<!--create 8 input boxes and one button for the survey page-->
+<!--all inputs will be using a div tag to make things easier-->
+            <div class="formGroup">
+                <label for="Name" id="name-label">Name</label>
+                <input id="name" type="text" name="Name" class="formControl" placeholder="Enter your Name" required="">
+            </div>
+            <div class="formGroup">
+                <label for="Email" id="email-label">Email</label>
+                <input type="email" id="email" name="Email" class="formControl" placeholder="Enter your Email" required="">
+            </div>
+            <div class="formGroup">
+                <label for="Number" id="number-label">Age</label>
+                <input type="number" min="0" max="99" id="number" name="Number" class="formControl" placeholder="Age">
+            </div>
+            <div class="formGroup">
+                <p>Which option best describes your current role?</p>
+                <select class="formControl" id="dropdown" name="role" required="">
+<!--make 6 option values with the first one being disabled-->
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                </select> 
+            </div>
+            <div class="formGroup">
+                <label></label>
+
+            </div>
+            <div class="formGroup">
+                <label></label>
+
+            </div>
+            <div class="formGroup">
+                <label></label>
+
+            </div>
+            <div class="formGroup">
+                <label></label>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
