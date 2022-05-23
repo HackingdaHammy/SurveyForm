@@ -1,1 +1,30 @@
 /*This is where stylizing the form comes into play*/
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #fff1e6;
+/*Testing the background image function will be seeing how i can further experiment on this*/
+/*      background-image: url(cpu.jpg); */
+/*turns out the background image does work, but it keeps flashing everytime i type*/
+/*will be hiding this feature in the comments untill all is set and done*/
+}
+
+.container {
+    max-width: 720px;
+}
+
+#title {
+    text-align: center;
+}
+
+.header {
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
+}
+
+/*adjust the format of the form to prep it for the formatting*/
+#survey-form {
+    padding: 2.5rem;
+    border-radius: 0.25rem;
+}
