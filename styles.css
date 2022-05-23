@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: sans-serif;
     font-weight: 400;
-    color: #fff1e6;
+   /* color: #fff1e6; turn on after setting a backround color*/
 /*Testing the background image function will be seeing how i can further experiment on this*/
 /*      background-image: url(cpu.jpg); */
 /*turns out the background image does work, but it keeps flashing everytime i type*/
@@ -18,9 +18,11 @@ body {
     text-align: center;
 }
 
+/*its in the center in terms of padding and whatnot, it just needs to have everything else in the exact center*/
 .header {
     padding: 0 0.625rem;
     margin-bottom: 1.875rem;
+    text-align: center;
 }
 
 /*adjust the format of the form to prep it for the formatting*/
@@ -28,3 +30,21 @@ body {
     padding: 2.5rem;
     border-radius: 0.25rem;
 }
+/*find a solution to organize the header text to the center of the webpage*/
+
+/* From uiverse.io by @Yaseen549 */
+/*code was borrowed on uiverse.io feel free to check out the site for ui buttons*/
+.formControl {
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #e8e8e8;
+    font-size: medium;
+    font-weight: bold;
+    max-width: 200px;
+   }
+   
+   .formControl:focus {
+    outline-color: white;
+    place-content: "Enter your message!";
+   }
